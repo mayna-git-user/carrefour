@@ -55,6 +55,13 @@
             <version>RELEASE</version>
             <scope>compile</scope>
         </dependency>
+
+		<dependency>
+			<groupId>uk.co.jemos.podam</groupId>
+			<artifactId>podam</artifactId>
+			<version>8.0.1.RELEASE</version>
+		</dependency>
+
     </dependencies>
 
 	<build>

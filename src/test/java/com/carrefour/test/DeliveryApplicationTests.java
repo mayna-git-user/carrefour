@@ -1,10 +1,10 @@
-package com.carrefour.spring.jpa.h2;
+package com.carrefour.test;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DeliveryApplication {
+class DeliveryApplicationTests {
 
 	@Test
 	void contextLoads() {
