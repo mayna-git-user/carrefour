@@ -1,0 +1,23 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+
+    <!-- create delivery method table -->
+    <changeSet id="ddl_create_delivery_method" author="Diagcloud" dbm="h2">
+        <createTable tableName="delivery_method">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="CPKDELIVERY_METHOD_TABLE" nullable="false"/>
+            </column>
+            <column name="uuid" type="VARCHAR2(255)" remarks="uuid" >
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="name" type="TEXT" remarks="method name">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <!-- todo : ajout insert for delivery method -->
+
+</databaseChangeLog>
